@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  /* background: #f4f6f8; */
+  margin: 0;
+}
+
+/* ---------------- MAIN CONTAINER ---------------- */
+
+#main {
+  width: 55vw;
+  max-width: 1200px;
+  margin: 4vh auto;
+  /* background: #ffffff; */
+  border-radius: 1.5vh;
+  display: flex;
+  gap: 1vw;
+  padding: 3vh 3vw;
+}
+
+/* ---------------- LEFT PANEL ---------------- */
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.left-panel h3 {
+  font-size: 2.4vh;
+  margin: 0;
+}
+
+#Buttons {
+  display: flex;
+  gap: 1vw;
+  flex-wrap: wrap;
+}
+
+#ops {
+  padding: 1.2vh 1.8vw;
+  border-radius: 2vh;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5vh;
+  /* background: #f0f2f5; */
+}
+
+#bars {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+#forLoadBar {
+  font-size: 1.6vh;
+  margin-bottom: 1vh;
+  color: #444;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+input[type="range"] {
+  flex: 1;
+  accent-color: #ff4433;
+}
+
+input[type="number"] {
+  width: 9vw;
+  min-width: 90px;
+  padding: 1vh;
+  border-radius: 0.8vh;
+  border: 0.1vh solid #ccc;
+  font-size: 1.5vh;
+}
+
+/* ---------------- RIGHT PANEL ---------------- */
+
+.right-panel {
+  width: 32%;
+  min-width: 280px;
+  background: #ff4433;
+  border-radius: 1.5vh;
+  padding: 3vh 2vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- RESULT CONTENT ---------------- */
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+#tag {
+  font-size: 1.6vh;
+  opacity: 0.9;
+}
+
+#interest {
+  font-size: 4vh;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+#total-int {
+  font-size: 1.7vh;
+}
+
+.small-print {
+  font-size: 1.4vh;
+  line-height: 1.6;
+}
+
+/* ---------------- ACTION BUTTONS ---------------- */
+
+.action-btns {
+  display: flex;
+  margin-top: 2vh;
+}
+
+#details-btn,
+#apply {
+  flex: 1;
+  padding: 1.2vh 0;
+  border: none;
+  font-size: 1.4vh;
+  cursor: pointer;
+}
+
+#details-btn {
+  background: rgba(0, 0, 0, 0.15);
+  color: white;
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+
+#apply {
+  /* background: white; */
+  color: #ff4433;
+  font-weight: 600;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+  #main {
+    flex-direction: column;
+  }
+
+  .right-panel {
+    width: 100%;
+  }
+
+  input[type="number"] {
+    width: 30%;
+  }
+}

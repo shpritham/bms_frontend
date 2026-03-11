@@ -1,0 +1,30 @@
+*{
+  /* outline: 1px solid rgb(15, 15, 15); */
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  /* width: 100vw; */
+  background-image:linear-gradient(to  bottom,white,#ff4422);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glasseffect{
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(256,256,244,0.3);
+  box-shadow:0 0 10px black,
+}
+
+.hovering{
+  transition: transform 2s ease-in;
+
+}
+
+.hovering:hover{
+  transform: scale(1.5);
+}
