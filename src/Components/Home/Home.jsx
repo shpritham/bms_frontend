@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import Bars from '../calculator/bars';
+import Bars from '../calculator/Bars';
 import CardHome from '../cardscomp/CardHome.JSX';
 
 
