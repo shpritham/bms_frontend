@@ -24,7 +24,7 @@ body {
   gap: 20px 30px;
   backdrop-filter: blur(10px);
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85)), url('../assets/bgloanpage.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85));
   background-size: cover;
   background-position: center;
 }

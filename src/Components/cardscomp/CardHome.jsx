@@ -23,7 +23,7 @@ function CardHome({type}) {
         <div id='container' >
             <div id='CardContainer' onClick={()=>{setTargetCard("Credit Card") }}>
                 <div id='cardImage'> 
-                    <img src='/creditCard.png' alt="Credit Card : " />
+                    <img src='creditCard.png' alt="Credit Card : " />
                 </div>
                 <div id="details">
                     <p id='AnnualFee'> <span id='tag'>Annual Fee : </span>0</p>
@@ -33,7 +33,7 @@ function CardHome({type}) {
             </div>
             <div id='CardContainer' onClick={()=>{setTargetCard("Debit Card")}}>
                 <div id='cardImage'> 
-                    <img src='/DebitCard.jpg.jpeg' alt="Debit Card : " />
+                    <img src='DebitCard.jpeg' alt="Debit Card : " />
                 </div>
                 <div id="details">
                     <p id='AnnualFee'> <span id='tag'>Annual Fee : </span>0</p>
